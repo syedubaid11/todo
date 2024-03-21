@@ -1,0 +1,1 @@
+(()=>{class t{constructor(t,e){this.Date=t,this.textcontent=e}}const e=document.getElementById("submit");e.addEventListener("click",(()=>{const n=new t(e.innerHTML);console.log(n)}))})();

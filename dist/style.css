@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap');
-
+*{
+  
+}
 body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
     
 }
 
@@ -11,14 +14,11 @@ body{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    width:25vh;
-    background-color:white;
-    height:100vh;    
-    overflow: hidden;
-    padding: 0 1rem;
-    gap: 1rem;
-    border-right:solid black ;
+    
 }
+
+
+
 
 .btn{
     display: flex;
@@ -49,4 +49,10 @@ body{
     margin-top:2rem;
     font-family:"Teko", sans-serif;
 
+}
+
+#centercontent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
