@@ -11,9 +11,6 @@ submit.addEventListener('click',()=>{
     //getting values from dialog
     const title=document.getElementById("form-title").value;
     const details=document.getElementById("form-text").value;
-    const testdiv=document.getElementById("local").value;
-    console.log(testdiv)
-
 
     //storing values in local storage
     localStorage.setItem("form-title",title);
