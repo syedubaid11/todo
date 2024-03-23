@@ -1,4 +1,9 @@
+const form=document.getElementById("formDialog")
+const add=document.getElementById("add")
 
+add.addEventListener('click',()=>{
+    form.showModal();
+})
 
 class todolist{
     constructor(Date,textcontent){
@@ -8,9 +13,3 @@ class todolist{
 }
 
 
-
-const submit=document.getElementById("submit")
-submit.addEventListener('click',()=>{
-    const todo=new todolist(submit.innerHTML)
-    console.log(todo)
-})
