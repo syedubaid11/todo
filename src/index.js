@@ -7,19 +7,23 @@ add.addEventListener('click',()=>{
 })
 
 
+submit.addEventListener('click',()=>{
+    //getting values from dialog
+    const title=document.getElementById("form-title").value;
+    const details=document.getElementById("form-text").value;
+    const testdiv=document.getElementById("local").value;
+    console.log(testdiv)
 
-function store(){
-        //getting values from dialog
-        const title=document.getElementById("form-title").value;
-        const details=document.getElementById("form-text").value;
 
-        //storing values in local storage
-        const titleStore=localStorage.setItem("form-title",title);
-        const detailsStore=localStorage.setItem("form-text",details);
- 
-}
-submit.addEventListener('click',store());
+    //storing values in local storage
+    localStorage.setItem("form-title",title);
+    localStorage.setItem("form-text",details);
+
+})
+
+
     
+
 
 
 
