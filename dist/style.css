@@ -59,3 +59,19 @@ body{
     flex-direction: column;
 
 }
+
+
+#displaytodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+#displaytodochild{
+    border:solid black red;
+    height: 2rem;
+    width: 2rem;
+    padding:2rem;
+    margin:2rem;
+
+}
