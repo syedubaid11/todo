@@ -1,7 +1,10 @@
+import addlist from "./add.js";
+
 const form=document.getElementById("formDialog")
 const add=document.getElementById("add")
 const submit=document.getElementById("submit")
 const remove=document.getElementById("remove")
+
 
 
 
@@ -15,15 +18,14 @@ submit.addEventListener('click',()=>{
     const title=document.getElementById("form-title").value;
     //storing values in local storage
     localStorage.setItem("form-title",title);
-    let text=localStorage.getItem("form-title");
+
+   
 })
 
 remove.addEventListener('click',()=>{
-    localStorage.removeItem("form-title");
+    localStorage.removeItem("lol");
     console.log("button is pressed")
 })
 
 
-const todocards=document.getElementById('displaytodo');
-todocards.innerHTML=localStorage.getItem("form-title");
 
