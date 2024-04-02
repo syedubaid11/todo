@@ -22,10 +22,11 @@ submit.addEventListener('click',()=>{
    
 })
 
+submit.addEventListener('click',addlist())
+
 remove.addEventListener('click',()=>{
     localStorage.removeItem("lol");
     console.log("button is pressed")
 })
-
 
 
