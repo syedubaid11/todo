@@ -91,10 +91,9 @@ body{
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    height: 1.5rem;
     width: max-content;
-    padding:1rem;
-    margin:2rem;
+    padding:0.8rem;
+    height:1rem;
     border:solid black 1px;
     border-radius:3px;
     word-break: break-all;    
