@@ -5,7 +5,11 @@ const add=document.getElementById("add")
 const submit=document.getElementById("submit")
 const remove=document.getElementById("remove")
 
-let itemsArray = localStorage.getItem('form-title') ? (localStorage.getItem('form-title')) : [];
+let itemsArray =["hello","check"];
+const key=itemsArray[0];
+
+console.log(key)
+
 
 add.addEventListener('click',()=>{
     form.showModal();
@@ -16,15 +20,15 @@ submit.addEventListener('click',()=>{
     const title=document.getElementById("form-title").value;
     //storing values in local storage
     localStorage.setItem("form-title",title);
-    const datastore=localStorage.getItem("form-title");
-    itemsArray.push(datastore);
-    console.log(itemsArray);
+
 })
 
-submit.addEventListener('click',addlist())
+
+
+
 
 remove.addEventListener('click',()=>{
-    localStorage.removeItem("lol");
+    localStorage.removeItem(key);
     console.log("button is pressed")
 })
 

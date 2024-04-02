@@ -1,8 +1,15 @@
-const ul=document.querySelector("ul");
 
 export default function addlist(){
-    const list=document.createElement("li");
-    list.innerHTML=localStorage.getItem("form-title")
-    ul.appendChild(list);
+    const div = document.createElement('div');
+    div.classList.add('to-do-list');
+
+    const ul = document.createElement('ul');
+    ul.classList.add('todo');
+
+    div.appendChild(ul);
+    document.body.appendChild(div);
+
     console.log("check")
 }
+
+
