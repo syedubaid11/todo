@@ -1,22 +1,35 @@
-import addlist from "./add.js";
 
 const add=document.getElementById("add-btn")
+const input=document.getElementById("inputbtn")
 
-let itemsArray =["hello","check"];
-const key=itemsArray[0];
+let itemsArray =[];
 
-console.log(key)
 
 add.addEventListener('click',()=>{
-    //getting values from dialog
+
     const title=document.querySelector("input").value;
-    //storing values in local storage
+
     localStorage.setItem("form-title",title);
 
+    addlist()
 })
 
+function addlist(){
+    const text=localStorage.getItem("form-title")
 
+    const div = document.createElement('div');
+    div.classList.add('to-do-list');
 
+    const ul = document.createElement('ul');
+    ul.classList.add('todo');
+
+    ul.innerHTML=text;
+
+    div.appendChild(ul);
+    document.body.appendChild(div);
+
+    console.log("check")
+}
 
 
 
